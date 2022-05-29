@@ -1,0 +1,161 @@
+/* Resset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right bottom, #2f80ed, #b2ffda);
+    height: 100vh;
+}
+
+.main{
+
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.profile__card{
+    margin-top: 155px;
+    width: 304px;
+    background-color: #242628;
+    height: 446px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.profile__card-img{
+    display: flex;
+}
+
+.profile__card-img_list {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    position: relative;
+    margin: 20px auto 0;
+    border: 4px solid #f2726a;
+    transition: all 0.05s;
+}
+
+.profile__card-name{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 28px;
+    font-weight: 600;
+}
+.profile__card-name-des{
+    color: #f2726a;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 1.8rem;
+}
+.social__media{
+    font-size: 2.8rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 38px 30px 30px;
+    z-index: 2;
+}
+
+a.social__media-link {
+    position: relative;
+    color: white;
+    outline: none;
+}
+
+.contact__us{
+    width: 126px;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid #f2726a;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.contact__us:hover{
+    background-color: #f2726a;
+    color: white;
+    cursor: pointer;
+}
+
+/* .bxl-facebook-circle::after {
+    content: "Facebook";
+    position: absolute;
+    font-size: 1.4rem;
+    left: -18px;
+    top: -31px;
+    padding: 3px 6px;
+    background-color: #1871e7;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+    text-align: center;
+    z-index: -1;
+} */
+
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #1871e7;
+    left: 50%;
+    top: -15px;
+    transform: translateX(-50%) rotate(45deg);
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+    z-index: -1;
+}
+
+.tooltip:hover {
+    cursor: pointer;
+}
+
+.tooltip:hover .bxl-facebook-circle::after,
+.tooltip:hover .tooltip::before {
+    background-color: #1871e7;   
+    z-index: 2;
+} 
+
+.bxl-facebook-circle:hover{
+    color: #1871e7;   
+    
+}
+
+i.bx.bxl-youtube:hover{
+    cursor: pointer;
+    color: #f00
+}
+
+i.bx.bxl-tiktok:hover,
+i.bx.bxl-github:hover{
+    cursor: pointer;
+    color: white;
+    background: black;
+    border-radius: 10px;
+}
+
+.profile__card-img_list:hover {
+    width: 100%;
+    height: 446px;
+    border-radius: unset;
+    margin: 0;
+    padding: 0;
+    border: unset;
+    cursor: pointer;
+}

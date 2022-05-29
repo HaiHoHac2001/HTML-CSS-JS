@@ -1,0 +1,116 @@
+/* RESET CSS */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6;
+    font-family: 'san-serif';
+}
+
+.main {
+}
+
+h1.title {
+    text-align: center;
+    font-size: 7rem;
+    padding: 30px;
+    background: -webkit-linear-gradient(#e233ff, #ff6b00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img__list {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 20px;
+    box-shadow: 2px 3px #efe5e5cc;
+    overflow: hidden;
+}
+
+.img__list-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.img__list-item:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.7);
+    transition: all 0.3s;
+}
+
+.gallery__inner {
+    display: flex;
+}
+
+img.gallery__img-list {
+    width: 70%;
+    height: 800px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.close__icon {
+    position: absolute;
+    font-size: 5rem;
+    color: white;
+    top: 0;
+    right: 20px;
+}
+
+.control {
+    color: white;
+    font-size: 6rem;
+    position: absolute;
+}
+
+.control.prev {
+    left: 0;
+}
+
+.control.next {
+    right: 0;
+}
+
+.gallery__img-list:hover,
+.close__icon:hover,
+.left__btn:hover,
+.right__btn:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.show {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1)
+
+}
+
+.hide{
+    display: none;
+}
